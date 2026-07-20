@@ -30,7 +30,7 @@ const CONTACTS = [
 
 export default function Contact() {
     return (
-        <section id="contacto" className="relative py-20 sm:py-28">
+        <section id="contact" className="relative py-20 sm:py-28">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="relative overflow-hidden rounded-3xl border border-border bg-card p-8 sm:p-12 lg:p-16">
                     <div className="absolute -right-24 -top-24 size-72 rounded-full bg-primary/20 blur-3xl" />

@@ -23,7 +23,7 @@ const WORKS = [
 
 export default function Works() {
     return (
-        <section id="trabajos" className="relative py-20 sm:py-28">
+        <section id="works" className="relative py-20 sm:py-28">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
                     <div>

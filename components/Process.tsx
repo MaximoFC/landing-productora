@@ -23,7 +23,7 @@ const STEPS = [
 
 export default function Process() {
     return (
-        <section id="proceso" className="relative border-t border-border py-20 sm:py-28">
+        <section id="process" className="relative border-t border-border py-20 sm:py-28">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <p className="text-xs font-medium uppercase tracking-[0.25em] text-primary">
                     Cómo trabajamos

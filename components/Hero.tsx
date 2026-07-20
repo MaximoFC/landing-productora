@@ -42,14 +42,14 @@ export default function Hero() {
 
                 <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
                     <a
-                        href="#contacto"
+                        href="#contact"
                         className="group inline-flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.03]"
                     >
                         Cotizar mi evento
                         <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                     </a>
                     <a
-                        href="#trabajos"
+                        href="#works"
                         className="group inline-flex items-center justify-center gap-2 rounded-full border border-border bg-background/40 px-7 py-3.5 text-sm font-semibold text-foreground backdrop-blur-sm transition-colors hover:bg-muted"
                     >
                         <Play className="size-4 text-primary" />
