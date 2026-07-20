@@ -53,7 +53,7 @@ export default function SiteFooter() {
                                 {['DJ en vivo', 'Sonido', 'Iluminación', 'Pantallas LED'].map(
                                     (item) => (
                                         <li key={item}>
-                                            <a href="#servicios" className="transition-colors hover:text-foreground">
+                                            <a href="#services" className="transition-colors hover:text-foreground">
                                                 {item}
                                             </a>
                                         </li>
@@ -67,9 +67,9 @@ export default function SiteFooter() {
                             </p>
                             <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
                                 {[
-                                    { label: 'Trabajos', href: '#trabajos' },
-                                    { label: 'Proceso', href: '#proceso' },
-                                    { label: 'Contacto', href: '#contacto' },
+                                    { label: 'Trabajos', href: '#works' },
+                                    { label: 'Proceso', href: '#process' },
+                                    { label: 'Contacto', href: '#contact' },
                                 ].map((item) => (
                                     <li key={item.label}>
                                         <a href={item.href} className="transition-colors hover:text-foreground">

@@ -65,7 +65,7 @@ export const landingData = {
             icon: MessageCircle,
             label: 'WhatsApp',
             value: '+54 9 11 5555-0198',
-            href: 'https://wa.me/549123456?text=Hola%20N%C3%93CTURA,%20quiero%20cotizar%20un%20evento',
+            href: 'https://wa.me/549123456',
             primary: true,
         },
         {

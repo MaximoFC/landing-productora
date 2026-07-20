@@ -137,7 +137,7 @@ export default function Services() {
                             </p>
                         </div>
                         <a
-                            href="#contacto"
+                            href="#contact"
                             className="mt-8 inline-flex items-center gap-2 text-sm font-semibold underline-offset-4 hover:underline"
                         >
                             Consultar disponibilidad

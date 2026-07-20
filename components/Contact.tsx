@@ -21,7 +21,7 @@ export default function Contact() {
                             </p>
 
                             <a
-                                href="https://wa.me/5491155550198?text=Hola%20N%C3%93CTURA,%20quiero%20cotizar%20un%20evento"
+                                href="https://wa.me/5491155550198"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="mt-8 inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-transform hover:scale-[1.03]"
