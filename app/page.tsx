@@ -4,6 +4,7 @@ import Marquee from "@/components/Marquee";
 import Services from "@/components/Services";
 import Works from "@/components/Works";
 import Process from "@/components/Process";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Services />
         <Works />
         <Process />
+        <Contact />
       </main>
     </div>
   );

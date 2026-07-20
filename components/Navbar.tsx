@@ -29,8 +29,8 @@ export default function Navbar() {
         >
             <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
 
-                <a href="#" className="flex items-center gap-2" aria-label="Santucho inicio">
-                    SANTUCHO PRODUCCIONES
+                <a href="#" className="flex items-center gap-2" aria-label="Producciones inicio">
+                    PRODUCCIONES
                 </a>
 
                 <nav className="hidden items-center gap-8 md:flex">
