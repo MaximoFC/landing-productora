@@ -1,15 +1,8 @@
-const ITEMS = [
-    'DJ en vivo',
-    'Sonido profesional',
-    'Iluminación',
-    'Máquina de humo',
-    'Pantallas LED',
-    'Cabinas DJ',
-    'Efectos especiales',
-]
+import { landingData } from "@/data/landing"
 
 export default function Marquee() {
-    const loop = [...ITEMS, ...ITEMS]
+    const loop = [...landingData.marqueeItems, ...landingData.marqueeItems]
+
     return (
         <section
             aria-hidden="true"

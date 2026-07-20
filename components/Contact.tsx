@@ -1,32 +1,5 @@
-import { MessageCircle, Phone, Mail, AtSign, ArrowUpRight } from 'lucide-react'
-
-const CONTACTS = [
-    {
-        icon: MessageCircle,
-        label: 'WhatsApp',
-        value: '+54 9 11 5555-0198',
-        href: 'https://wa.me/549123456?text=Hola%20N%C3%93CTURA,%20quiero%20cotizar%20un%20evento',
-        primary: true,
-    },
-    {
-        icon: Phone,
-        label: 'Teléfono',
-        value: '+54 11 4444-0100',
-        href: 'tel:+541144440100',
-    },
-    {
-        icon: Mail,
-        label: 'Email',
-        value: 'hola@producciones.com',
-        href: 'mailto:hola@producciones.com',
-    },
-    {
-        icon: AtSign,
-        label: 'Instagram',
-        value: '@producciones',
-        href: 'https://instagram.com',
-    },
-]
+import { MessageCircle, ArrowUpRight } from 'lucide-react'
+import { landingData } from "@/data/landing"
 
 export default function Contact() {
     return (
@@ -59,7 +32,7 @@ export default function Contact() {
                         </div>
 
                         <div className="grid gap-3 sm:grid-cols-2">
-                            {CONTACTS.map((c) => {
+                            {landingData.contacts.map((c) => {
                                 const Icon = c.icon
                                 return (
                                     <a

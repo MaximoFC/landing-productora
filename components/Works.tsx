@@ -1,25 +1,5 @@
 import Image from "next/image";
-
-const WORKS = [
-    {
-        img: '/images/private-fest.jpg',
-        title: 'Neon Warehouse',
-        type: 'Fiesta privada · 800 personas',
-        className: 'sm:col-span-2 sm:row-span-2',
-    },
-    {
-        img: '/images/corporative-show.jpg',
-        title: 'Lanzamiento LMX',
-        type: 'Evento corporativo',
-        className: '',
-    },
-    {
-        img: '/images/open-air-fest.jpg',
-        title: 'Open Air Fest',
-        type: 'Festival al aire libre',
-        className: '',
-    },
-]
+import { landingData } from "@/data/landing"
 
 export default function Works() {
     return (
@@ -37,7 +17,7 @@ export default function Works() {
                 </div>
 
                 <div className="mt-12 grid auto-rows-[220px] grid-cols-1 gap-4 sm:grid-cols-3">
-                    {WORKS.map((work) => (
+                    {landingData.works.map((work) => (
                         <article
                             key={work.title}
                             className={`group relative overflow-hidden rounded-2xl border border-border ${work.className}`}
