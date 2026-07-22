@@ -3,7 +3,7 @@ import { ArrowUpRight, Play } from "lucide-react";
 
 export default function Hero() {
     return (
-        <section className="relative isolate flex min-h-screen items-end overflow-hidden pb-16 pt-28 sm:pb-24">
+        <section className="relative isolate flex min-h-screen items-end overflow-hidden pb-12 pt-24 sm:pb-20 lg:items-center">
             {/* Background image or video */}
             <div className="absolute inset-0 -z-30">
                 <Image
@@ -11,7 +11,7 @@ export default function Hero() {
                     alt="Hero Background"
                     fill
                     priority
-                    className="object-cover object-center scale-105 brightness-[0.85] contrast-110 saturate-125"
+                    className="object-cover object-center scale-110 lg:scale-105 brightness-[0.85] contrast-110 saturate-125"
                 />
             </div>
 
@@ -33,18 +33,18 @@ export default function Hero() {
             {/* Grid */}
             <div className="absolute inset-0 -z-10 bg-grid opacity-20" />
 
-            <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10">
                 <div className="flex items-center gap-3">
                     <span className="flex h-2 w-2 items-center justify-center">
                         <span className="absolute h-2 w-2 animate-ping rounded-full bg-primary/70" />
                         <span className="h-2 w-2 rounded-full bg-primary" />
                     </span>
-                    <p className="text-xs font-medium uppercase tracking-[0.25em] text-muted-foreground">
+                    <p className="text-[11px] sm:text-xs font-medium uppercase tracking-[0.18em] sm:tracking-[0.25em] text-muted-foreground">
                         Productora de eventos · Desde 2014
                     </p>
                 </div>
 
-                <h1 className="mt-6 max-w-4xl font-display text-[2.5rem] font-extrabold leading-[0.95] tracking-tight text-balance sm:text-7xl lg:text-8xl">
+                <h1 className="mt-6 max-w-4xl font-display text-5xl font-extrabold leading-[0.95] tracking-tight text-[2.2rem] xs:text-[2.5rem] sm:text-6xl md:text-7xl lg:text-[7rem]">
                     Convertimos tu evento en una{' '}
                     <span
                         className="text-primary"
@@ -57,7 +57,7 @@ export default function Hero() {
                     </span>.
                 </h1>
 
-                <p className="mt-6 max-w-2xl text-pretty text-base leading-8 text-muted-foreground sm:text-lg">
+                <p className="mt-6 max-w-xl text-[15px] sm:text-base leading-7 text-muted-foreground lg:max-w-2xl lg:text-lg lg:leading-8">
                     DJs, sonido profesional, iluminación, humo y pantallas LED. Producción
                     integral de alto calibre para fiestas, bodas y eventos corporativos que
                     la gente recuerda.
@@ -81,7 +81,7 @@ export default function Hero() {
                 </div>
 
                 {/* Stats strip */}
-                    <dl className="mt-14 grid max-w-2xl grid-cols-3 gap-6 border-t border-border pt-8">
+                    <dl className="mt-14 grid max-w-5xl grid-cols-3 gap-8 border-t border-border pt-8 w-full">
                         {[
                             { value: '850+', label: 'Eventos producidos' },
                             { value: '12k W', label: 'Potencia de sonido' },
