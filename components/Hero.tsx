@@ -44,7 +44,7 @@ export default function Hero() {
                     </p>
                 </div>
 
-                <h1 className="mt-6 max-w-4xl font-display text-5xl font-extrabold leading-[0.95] tracking-tight text-[2.2rem] xs:text-[2.5rem] sm:text-6xl md:text-7xl lg:text-[7rem]">
+                <h1 className="mt-6 max-w-4xl font-display font-extrabold leading-[0.95] tracking-tight text-[2.2rem] xs:text-[2.5rem] sm:text-5xl md:text-5xl lg:text-7xl">
                     Convertimos tu evento en una{' '}
                     <span
                         className="text-primary"
