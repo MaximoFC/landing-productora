@@ -16,22 +16,22 @@ export default function Hero() {
             </div>
 
             {/* Oscurece toda la foto */}
-            <div className="absolute inset-0 -z-20 bg-black/55" />
+            <div className="absolute inset-0 -z-20 bg-black/55 pointer-events-none" />
                 
             {/* Gradiente inferior */}
-            <div className="absolute inset-0 -z-20 bg-gradient-to-t from-background via-background/40 to-transparent" />
+            <div className="absolute inset-0 -z-20 bg-gradient-to-t from-background via-background/40 to-transparent pointer-events-none" />
                 
             {/* Luz violeta */}
-            <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_65%_20%,rgba(197, 142, 249, 0.3),transparent_45%)]" />
+            <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_65%_20%,rgba(197, 142, 249, 0.3),transparent_45%)] pointer-events-none" />
                 
             {/* Luz azul */}
-            <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_25%_35%,rgba(59,130,246,.15),transparent_45%)]" />
+            <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle_at_25%_35%,rgba(59,130,246,.15),transparent_45%)] pointer-events-none" />
                 
             {/* Viñeta */}
-            <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle,transparent_45%,rgba(0,0,0,.65)_100%)]" />
+            <div className="absolute inset-0 -z-20 bg-[radial-gradient(circle,transparent_45%,rgba(0,0,0,.65)_100%)] pointer-events-none" />
                 
             {/* Grid */}
-            <div className="absolute inset-0 -z-10 bg-grid opacity-20" />
+            <div className="absolute inset-0 -z-10 bg-grid opacity-20 pointer-events-none" />
 
             <div className="mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10">
                 <div className="flex items-center gap-3">

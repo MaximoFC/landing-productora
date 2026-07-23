@@ -21,15 +21,28 @@ export default function Navbar() {
         return () => window.removeEventListener('scroll', onScroll)
     }, [])
 
+    // Cerrar el menú al cambiar de tamaño
+    useEffect(() => {
+        const onResize = () => {
+            if (window.innerWidth >= 768) {
+                setOpen(false);
+            }
+        };
+
+        window.addEventListener("resize", onResize);
+
+        return () => window.removeEventListener("resize", onResize);
+    }, []);
+
     return (
         <header
             className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
                 scrolled ? 'border-b border-border bg-background/80 backdrop-blur-xl' : 'border-b border-transparent'
             }`}
         >
-            <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8 z-50">
 
-                <a href="#" className="flex items-center gap-2" aria-label="NÓCTURA inicio">
+                <a href="#" className="flex items-center gap-2" aria-label="Producciones inicio">
                     <span className="grid size-8 place-items-center rounded-md bg-primary text-primary-foreground">
                         <span className="font-display text-lg font-extrabold leading-none">P</span>
                     </span>
@@ -38,7 +51,7 @@ export default function Navbar() {
                     </span>
                 </a>
 
-                <nav className="hidden items-center gap-8 md:flex">
+                <nav className="hidden items-center gap-8 md:flex z-50">
                     {NAV.map((item) => (
                         <a
                             key={item.label}
@@ -59,14 +72,17 @@ export default function Navbar() {
                 </a>
 
                 <button
-                    type="button"
-                    onClick={() => setOpen((v) => !v)}
-                    className="grid size-10 place-items-center rounded-md border border-border text-foreground md:hidden"
-                    aria-label={open ? 'Cerrar menú' : 'Abrir menú'}
-                    aria-expanded={open}
-                >
-                    {open ? <X className="size-5" /> : <Menu className="size-5" />}
-                </button>
+  type="button"
+  onClick={() => alert("click")}
+  style={{
+    WebkitUserSelect: "none",
+    userSelect: "none",
+    WebkitTouchCallout: "none",
+    touchAction: "manipulation",
+  }}
+>
+  ☰
+</button>
             </div>
 
             {open && (
@@ -83,7 +99,7 @@ export default function Navbar() {
                             </a>
                         ))}
                         <a
-                            href="#contacto"
+                            href="#contact"
                             onClick={() => setOpen(false)}
                             className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground"
                         >

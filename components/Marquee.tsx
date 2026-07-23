@@ -6,7 +6,7 @@ export default function Marquee() {
     return (
         <section
             aria-hidden="true"
-            className="border-y border-border bg-card py-5 overflow-hidden"
+            className="border-y border-border bg-card py-5 overflow-hidden [contain:paint]"
         >
             <div className="flex w-max animate-marquee items-center gap-8 whitespace-nowrap">
                 {loop.map((item, i) => (
