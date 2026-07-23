@@ -72,17 +72,14 @@ export default function Navbar() {
                 </a>
 
                 <button
-  type="button"
-  onClick={() => alert("click")}
-  style={{
-    WebkitUserSelect: "none",
-    userSelect: "none",
-    WebkitTouchCallout: "none",
-    touchAction: "manipulation",
-  }}
->
-  ☰
-</button>
+                    type="button"
+                    onClick={() => setOpen((v) => !v)}
+                    className="grid size-10 place-items-center rounded-md border border-border text-foreground md:hidden"
+                    aria-label={open ? 'Cerrar menú' : 'Abrir menú'}
+                    aria-expanded={open}
+                >
+                    {open ? <X className="size-5 pointer-events-none" /> : <Menu className="size-5 pointer-events-none" />}
+                </button>
             </div>
 
             {open && (
