@@ -16,14 +16,16 @@ const syne = Syne({
 })
 
 export const metadata: Metadata = {
-  title: 'PRODUCCIONES — Productora de eventos y experiencias sonoras',
+  title: 'PRODUCCIONES - Productora de eventos y experiencias sonoras',
   description:
     'Productora musical de alto calibre. DJs profesionales, sistemas de sonido, iluminación, máquinas de humo y pantallas LED para eventos inolvidables.'
 }
 
 export const viewport: Viewport = {
-  colorScheme: 'dark',
-  themeColor: '#151210',
+  colorScheme: "dark",
+  themeColor: "#151210",
+  width: "device-width",
+  initialScale: 1
 }
 
 export default function RootLayout({

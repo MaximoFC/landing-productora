@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="relative min-h-screen overflow-x-hidden">
       <Navbar />
-      <main>
+      <main id="top" className="relative isolate overflow-hidden">
         <Hero />
         <Marquee />
         <Services />

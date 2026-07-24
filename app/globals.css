@@ -25,7 +25,7 @@
   --chart-3: oklch(0.55 0.02 60);
   --chart-4: oklch(0.4 0.015 60);
   --chart-5: oklch(0.3 0.01 60);
-  --radius: 0.5rem;
+  --radius: 0.75rem;
   --sidebar: oklch(0.185 0.01 60);
   --sidebar-foreground: oklch(0.96 0.01 80);
   --sidebar-primary: oklch(0.72 0.185 48);
@@ -113,4 +113,59 @@
       transparent 1px
     );
   background-size: 64px 64px;
+}
+
+html {
+    scroll-behavior:smooth;
+}
+
+::selection {
+  background:var(--color-primary);
+  color:black;
+}
+
+::-webkit-scrollbar{
+  width:8px;
+}
+
+::-webkit-scrollbar-track{
+  background:var(--background);
+}
+
+::-webkit-scrollbar-thumb{
+  background:rgba(255,255,255,.12);
+  border-radius:999px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:rgba(255,255,255,.2);
+}
+
+img{
+  user-select:none;
+  -webkit-user-drag:none;
+}
+
+:focus-visible{
+  outline:2px solid var(--primary);
+  outline-offset:4px;
+}
+
+body{
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  background-image:
+  radial-gradient(circle at top,rgba(176,92,1,.04),transparent 40%);
+}
+
+@utility container-section{
+  margin-inline:auto;
+  width:100%;
+  max-width:80rem;
+  padding-inline:1.5rem;
+}
+
+@utility section-spacing{
+  padding-block:6rem;
 }
