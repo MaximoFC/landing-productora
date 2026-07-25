@@ -6,7 +6,7 @@ export default function Contact() {
         <section id="contact" className="relative py-20 sm:py-28">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="relative overflow-hidden rounded-3xl border border-border bg-card p-8 sm:p-12 lg:p-16">
-                    <div className="absolute -right-24 -top-24 size-72 rounded-full bg-primary/20 blur-3xl" />
+                    <div className="absolute right-0 top-0 h-80 w-80 translate-x-1/3 -translate-y-1/3 rounded-full bg-primary/20 blur-3xl pointer-events-none" />
                     <div className="relative grid gap-12 lg:grid-cols-2">
                         <div>
                             <p className="text-xs font-medium uppercase tracking-[0.25em] text-primary">

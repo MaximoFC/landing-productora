@@ -30,7 +30,7 @@ export default function Services() {
                 <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                     {/* Feature card: DJ */}
                     <article className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-border bg-card p-8 sm:col-span-2 lg:row-span-2">
-                        <div className="absolute -right-16 -top-16 size-56 rounded-full bg-primary/20 blur-3xl transition-opacity group-hover:opacity-80" />
+                        <div className="absolute right-0 top-0 h-80 w-80 translate-x-1/3 -translate-y-1/3 rounded-full bg-primary/20 blur-3xl pointer-events-none" />
                         <div className="relative">
                             <div className="grid size-12 place-items-center rounded-xl bg-primary text-primary-foreground">
                                 <Disc3 className="size-6" />
