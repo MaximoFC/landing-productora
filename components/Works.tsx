@@ -10,7 +10,7 @@ export default function Works() {
                         <p className="text-xs font-medium uppercase tracking-[0.25em] text-primary">
                             Trabajos recientes
                         </p>
-                        <h2 className="mt-3 max-w-2xl font-display text-4xl font-extrabold leading-tight tracking-tight text-balance sm:text-5xl">
+                        <h2 className="mt-3 max-w-2xl font-display font-extrabold leading-tight leading-[1.05] text-[2rem] sm:text-[2.5rem] md:text-5xl">
                             Producciones que hablan por sí solas
                         </h2>
                     </div>
